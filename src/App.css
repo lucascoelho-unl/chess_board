@@ -1,15 +1,49 @@
 /* src/App.css */
+
 .App {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
   background-color: #212121;
-  /* Dark background */
 }
 
-.chess-container {
-  text-align: center;
+.game-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 20px;
+}
+
+.board-container {
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.move-history {
+  width: 250px;
   color: white;
-  /* Text color to contrast with dark background */
+  background-color: #333;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.8);
+  max-height: 750px;
+  overflow-y: auto;
+}
+
+.move-history h2 {
+  margin-bottom: 20px;
+}
+
+.move-history ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.move-history li {
+  margin-bottom: 10px;
 }
